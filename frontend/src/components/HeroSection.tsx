@@ -7,7 +7,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-[90vh] md:h-screen w-full overflow-hidden">
       <video
         src={heroVideo}
         autoPlay
@@ -16,8 +16,7 @@ const HeroSection = () => {
         playsInline
         preload="auto"
         aria-label="Drisora luxury jewelry cinematic background"
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ transform: 'scale(1.12) translate(-3%, -3%)', transformOrigin: 'center center' }}
+        className="absolute inset-0 w-full h-full object-cover object-center"
       />
       <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.20)' }} />
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
